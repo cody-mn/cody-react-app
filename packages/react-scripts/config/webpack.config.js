@@ -803,7 +803,6 @@ function configWebpack(webpackEnv) {
 const useWebpackConfigure = fs.existsSync(paths.appWebpackConfig);
 
 module.exports = function (webpackEnv) {
-  console.log({ useWebpackConfigure, paths });
   if (useWebpackConfigure) {
     return require(paths.appWebpackConfig)(configWebpack(webpackEnv), {
       env: webpackEnv,
