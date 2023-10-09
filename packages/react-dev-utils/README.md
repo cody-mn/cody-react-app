@@ -26,7 +26,7 @@ It works in tandem with [HtmlWebpackPlugin](https://github.com/ampedandwired/htm
 ```js
 var path = require('path');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
-var InterpolateHtmlPlugin = require('react-dev-utils/InterpolateHtmlPlugin');
+var InterpolateHtmlPlugin = require('@cody-mn/react-dev-utils/InterpolateHtmlPlugin');
 
 // webpack config
 var publicUrl = '/my-custom-url';
@@ -64,7 +64,7 @@ It works in tandem with [HtmlWebpackPlugin](https://github.com/ampedandwired/htm
 ```js
 var path = require('path');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
-var InlineChunkHtmlPlugin = require('react-dev-utils/InlineChunkHtmlPlugin');
+var InlineChunkHtmlPlugin = require('@cody-mn/react-dev-utils/InlineChunkHtmlPlugin');
 
 // webpack config
 var publicUrl = '/my-custom-url';
@@ -95,7 +95,7 @@ This webpack plugin ensures that relative imports from app's source directories 
 
 ```js
 var path = require('path');
-var ModuleScopePlugin = require('react-dev-utils/ModuleScopePlugin');
+var ModuleScopePlugin = require('@cody-mn/react-dev-utils/ModuleScopePlugin');
 
 module.exports = {
   // ...
@@ -119,7 +119,7 @@ If a file is not found, prints a warning message and returns `false`.
 
 ```js
 var path = require('path');
-var checkRequiredFiles = require('react-dev-utils/checkRequiredFiles');
+var checkRequiredFiles = require('@cody-mn/react-dev-utils/checkRequiredFiles');
 
 if (
   !checkRequiredFiles([
@@ -136,7 +136,7 @@ if (
 Clears the console, hopefully in a cross-platform way.
 
 ```js
-var clearConsole = require('react-dev-utils/clearConsole');
+var clearConsole = require('@cody-mn/react-dev-utils/clearConsole');
 
 clearConsole();
 console.log('Just cleared the screen!');
@@ -148,7 +148,7 @@ This is our custom ESLint formatter that integrates well with Create React App c
 You can use the default one instead if you prefer so.
 
 ```js
-const eslintFormatter = require('react-dev-utils/eslintFormatter');
+const eslintFormatter = require('@cody-mn/react-dev-utils/eslintFormatter');
 
 // In your webpack config:
 // ...
@@ -186,7 +186,7 @@ Prints the JS and CSS asset sizes after the build, and includes a size compariso
 var {
   measureFileSizesBeforeBuild,
   printFileSizesAfterBuild,
-} = require('react-dev-utils/FileSizeReporter');
+} = require('@cody-mn/react-dev-utils/FileSizeReporter');
 
 measureFileSizesBeforeBuild(buildFolder).then(previousFileSizes => {
   return cleanAndRebuild().then(webpackStats => {
@@ -202,7 +202,7 @@ Extracts and prettifies warning and error messages from webpack [stats](https://
 ```js
 var webpack = require('webpack');
 var config = require('../config/webpack.config.dev');
-var formatWebpackMessages = require('react-dev-utils/formatWebpackMessages');
+var formatWebpackMessages = require('@cody-mn/react-dev-utils/formatWebpackMessages');
 
 var compiler = webpack(config);
 
@@ -234,7 +234,7 @@ Prettify some known build errors.
 Pass an Error object to log a prettified error message in the console.
 
 ```
-  const printBuildError = require('react-dev-utils/printBuildError')
+  const printBuildError = require('@cody-mn/react-dev-utils/printBuildError')
   try {
     build()
   } catch(e) {
@@ -253,7 +253,7 @@ in /Users/developer/create-react-app
 ```
 
 ```js
-var getProcessForPort = require('react-dev-utils/getProcessForPort');
+var getProcessForPort = require('@cody-mn/react-dev-utils/getProcessForPort');
 
 getProcessForPort(3000);
 ```
@@ -279,7 +279,7 @@ Otherwise, falls back to [opn](https://github.com/sindresorhus/opn) behavior.
 
 ```js
 var path = require('path');
-var openBrowser = require('react-dev-utils/openBrowser');
+var openBrowser = require('@cody-mn/react-dev-utils/openBrowser');
 
 if (openBrowser('http://localhost:3000')) {
   console.log('The browser tab has been opened!');
@@ -356,7 +356,7 @@ For `MyFolder/MyComponent.module.css` and class `MyClass` the output will be `My
 For `MyFolder/index.module.css` and class `MyClass` the output will be `MyFolder_MyClass__[hash]`
 
 ```js
-const getCSSModuleLocalIdent = require('react-dev-utils/getCSSModuleLocalIdent');
+const getCSSModuleLocalIdent = require('@cody-mn/react-dev-utils/getCSSModuleLocalIdent');
 
 // In your webpack config:
 // ...
@@ -390,7 +390,7 @@ module: {
 Returns a cache identifier (string) consisting of the specified environment and related package versions, e.g.,
 
 ```js
-var getCacheIdentifier = require('react-dev-utils/getCacheIdentifier');
+var getCacheIdentifier = require('@cody-mn/react-dev-utils/getCacheIdentifier');
 
 getCacheIdentifier('prod', ['react-dev-utils', 'chalk']); // # => 'prod:react-dev-utils@5.0.0:chalk@3.0.0'
 ```
