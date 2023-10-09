@@ -1,6 +1,6 @@
 {
   "name": "@cody-mn/example",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "private": true,
   "dependencies": {
     "babel-plugin-styled-components": "^2.1.4",

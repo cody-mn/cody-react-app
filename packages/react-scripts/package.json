@@ -1,6 +1,6 @@
 {
   "name": "@cody-mn/react-scripts",
-  "version": "5.0.6",
+  "version": "5.0.7",
   "description": "Configuration and scripts for Cody React App.",
   "repository": {
     "type": "git",
@@ -29,11 +29,11 @@
   "types": "./lib/react-app.d.ts",
   "dependencies": {
     "@babel/core": "^7.16.0",
-    "@cody-mn/babel-plugin-named-asset-import": "^0.3.13",
-    "@cody-mn/babel-preset-react-app": "^10.0.6",
-    "@cody-mn/eslint-config-react-app": "^7.0.6",
-    "@cody-mn/react-app-polyfill": "^3.0.5",
-    "@cody-mn/react-dev-utils": "^12.0.6",
+    "@cody-mn/babel-plugin-named-asset-import": "^0.3.14",
+    "@cody-mn/babel-preset-react-app": "^10.0.7",
+    "@cody-mn/eslint-config-react-app": "^7.0.7",
+    "@cody-mn/react-app-polyfill": "^3.0.6",
+    "@cody-mn/react-dev-utils": "^12.0.7",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.3",
     "@svgr/webpack": "^5.5.0",
     "babel-jest": "^27.4.2",
