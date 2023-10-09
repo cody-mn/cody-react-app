@@ -97,7 +97,7 @@ const hasJsxRuntime = (() => {
 
 // This is the production and development configuration.
 // It is focused on developer experience, fast rebuilds, and a minimal bundle.
-module.exports = function (webpackEnv) {
+function configWebpack(webpackEnv) {
   const isEnvDevelopment = webpackEnv === 'development';
   const isEnvProduction = webpackEnv === 'production';
 
@@ -797,4 +797,18 @@ module.exports = function (webpackEnv) {
     // our own hints via the FileSizeReporter
     performance: false,
   };
+}
+
+// Check if Webpack config exists
+const useWebpackConfigure = fs.existsSync(paths.appWebpackConfig);
+
+module.exports = function (webpackEnv) {
+  console.log({ useWebpackConfigure, paths });
+  if (useWebpackConfigure) {
+    return require(paths.appWebpackConfig)(configWebpack(webpackEnv), {
+      env: webpackEnv,
+      paths,
+    });
+  }
+  return configWebpack(webpackEnv);
 };
