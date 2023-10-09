@@ -1,6 +1,6 @@
 {
   "name": "@cody-mn/react-app-polyfill",
-  "version": "3.0.4",
+  "version": "3.0.5",
   "description": "Polyfills for various browsers including commonly used language features",
   "repository": {
     "type": "git",

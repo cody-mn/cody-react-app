@@ -1,18 +1,18 @@
 {
   "name": "@cody-mn/example",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "dependencies": {
+    "babel-plugin-styled-components": "^2.1.4",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "babel-plugin-styled-components": "^2.1.4"
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@cody-mn/react-scripts": "^5.0.5",
-    "web-vitals": "^2.1.4",
+    "@cody-mn/react-scripts": "^5.0.6",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0"
+    "@testing-library/user-event": "^13.5.0",
+    "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
