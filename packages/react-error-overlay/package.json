@@ -1,6 +1,6 @@
 {
   "name": "@cody-mn/react-error-overlay",
-  "version": "6.0.11",
+  "version": "6.0.12",
   "description": "An overlay for displaying stack frames.",
   "main": "lib/index.js",
   "sideEffects": false,
@@ -37,10 +37,11 @@
   "devDependencies": {
     "@babel/code-frame": "^7.16.0",
     "@babel/core": "^7.16.0",
+    "@cody-mn/babel-preset-react-app": "^10.0.2",
+    "@cody-mn/react-app-polyfill": "^3.0.1",
     "anser": "^2.1.0",
     "babel-jest": "^27.4.2",
     "babel-loader": "^8.2.3",
-    "@cody-mn/babel-preset-react-app": "^10.0.1",
     "chalk": "^4.1.2",
     "chokidar": "^3.5.2",
     "cross-env": "^7.0.3",
@@ -52,7 +53,6 @@
     "promise": "^8.1.0",
     "raw-loader": "^4.0.2",
     "react": "^17.0.2",
-    "@cody-mn/react-app-polyfill": "^3.0.0",
     "react-dom": "^17.0.2",
     "rimraf": "^3.0.2",
     "settle-promise": "^1.0.0",
