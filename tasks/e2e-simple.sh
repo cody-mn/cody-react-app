@@ -79,17 +79,17 @@ fi
 # Start the local NPM registry
 startLocalRegistry "$root_path"/tasks/verdaccio.yaml
 
-npm test -w react-error-overlay
+npm test -w @cody-mn/react-error-overlay
 if [ "$AGENT_OS" != 'Windows_NT' ]; then
   # Flow started hanging on Windows build agents
-  npm run flow -w react-error-overlay
+  npm run flow -w @cody-mn/react-error-overlay
 fi
 
-npm test -w react-dev-utils
+npm test -w @cody-mn/react-dev-utils
 
-npm test -w babel-plugin-named-asset-import
+npm test -w @cody-mn/babel-plugin-named-asset-import
 
-npm test -w confusing-browser-globals
+npm test -w @cody-mn/confusing-browser-globals
 
 # ******************************************************************************
 # First, test the create-react-app development environment.

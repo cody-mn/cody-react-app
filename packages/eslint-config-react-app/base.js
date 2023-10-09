@@ -33,7 +33,7 @@ module.exports = {
     sourceType: 'module',
     requireConfigFile: false,
     babelOptions: {
-      presets: [require.resolve('babel-preset-react-app/prod')],
+      presets: [require.resolve('@cody-mn/babel-preset-react-app/prod')],
     },
   },
 

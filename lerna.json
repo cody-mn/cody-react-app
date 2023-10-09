@@ -15,5 +15,11 @@
       "tag: underlying tools": ":hammer: Underlying Tools"
     },
     "cacheDir": ".changelog"
+  },
+  "command": {
+    "publish": {
+      "message": "chore(release): publish",
+      "registry": "https://npm.pkg.github.com"
+    }
   }
 }

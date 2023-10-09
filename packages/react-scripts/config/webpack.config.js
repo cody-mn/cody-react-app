@@ -45,7 +45,7 @@ const reactRefreshRuntimeEntry = require.resolve('react-refresh/runtime');
 const reactRefreshWebpackPluginRuntimeEntry = require.resolve(
   '@pmmmwh/react-refresh-webpack-plugin'
 );
-const babelRuntimeEntry = require.resolve('babel-preset-react-app');
+const babelRuntimeEntry = require.resolve('@cody-mn/babel-preset-react-app');
 const babelRuntimeEntryHelpers = require.resolve(
   '@babel/runtime/helpers/esm/assertThisInitialized',
   { paths: [babelRuntimeEntry] }
@@ -419,11 +419,11 @@ module.exports = function (webpackEnv) {
               loader: require.resolve('babel-loader'),
               options: {
                 customize: require.resolve(
-                  'babel-preset-react-app/webpack-overrides'
+                  '@cody-mn/babel-preset-react-app/webpack-overrides'
                 ),
                 presets: [
                   [
-                    require.resolve('babel-preset-react-app'),
+                    require.resolve('@cody-mn/babel-preset-react-app'),
                     {
                       runtime: hasJsxRuntime ? 'automatic' : 'classic',
                     },
@@ -442,10 +442,10 @@ module.exports = function (webpackEnv) {
                     ? 'production'
                     : isEnvDevelopment && 'development',
                   [
-                    'babel-plugin-named-asset-import',
-                    'babel-preset-react-app',
-                    'react-dev-utils',
-                    'react-scripts',
+                    '@cody-mn/babel-plugin-named-asset-import',
+                    '@cody-mn/babel-preset-react-app',
+                    '@cody-mn/react-dev-utils',
+                    '@cody-mn/react-scripts',
                   ]
                 ),
                 // @remove-on-eject-end
@@ -475,7 +475,9 @@ module.exports = function (webpackEnv) {
                 compact: false,
                 presets: [
                   [
-                    require.resolve('babel-preset-react-app/dependencies'),
+                    require.resolve(
+                      '@cody-mn/babel-preset-react-app/dependencies'
+                    ),
                     { helpers: true },
                   ],
                 ],
@@ -488,10 +490,10 @@ module.exports = function (webpackEnv) {
                     ? 'production'
                     : isEnvDevelopment && 'development',
                   [
-                    'babel-plugin-named-asset-import',
-                    'babel-preset-react-app',
-                    'react-dev-utils',
-                    'react-scripts',
+                    '@cody-mn/babel-plugin-named-asset-import',
+                    '@cody-mn/babel-preset-react-app',
+                    '@cody-mn/react-dev-utils',
+                    '@cody-mn/react-scripts',
                   ]
                 ),
                 // @remove-on-eject-end
@@ -780,7 +782,7 @@ module.exports = function (webpackEnv) {
           cwd: paths.appPath,
           resolvePluginsRelativeTo: __dirname,
           baseConfig: {
-            extends: [require.resolve('eslint-config-react-app/base')],
+            extends: [require.resolve('@cody-mn/eslint-config-react-app/base')],
             rules: {
               ...(!hasJsxRuntime && {
                 'react/react-in-jsx-scope': 'error',
