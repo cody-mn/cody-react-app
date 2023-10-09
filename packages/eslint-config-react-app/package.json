@@ -1,6 +1,6 @@
 {
   "name": "@cody-mn/eslint-config-react-app",
-  "version": "7.0.2",
+  "version": "7.0.3",
   "description": "ESLint configuration used by Create React App",
   "repository": {
     "type": "git",
@@ -22,11 +22,13 @@
   "dependencies": {
     "@babel/core": "^7.0.0",
     "@babel/eslint-parser": "^7.0.0",
-    "@cody-mn/babel-preset-react-app": "^10.0.2",
-    "@cody-mn/confusing-browser-globals": "^1.0.12",
+    "@cody-mn/babel-preset-react-app": "^10.0.3",
+    "@cody-mn/confusing-browser-globals": "^1.0.13",
     "@rushstack/eslint-patch": "^1.0.0",
     "@typescript-eslint/eslint-plugin": "^6.0.0",
     "@typescript-eslint/parser": "^6.0.0",
+    "eslint-import-resolver-node": "^0.3.9",
+    "eslint-import-resolver-typescript": "^3.0.0",
     "eslint-plugin-flowtype": "^8.0.0",
     "eslint-plugin-formatjs": "^4.0.0",
     "eslint-plugin-import": "^2.0.0",
@@ -37,8 +39,6 @@
     "eslint-plugin-react-hooks": "^4.0.0",
     "eslint-plugin-simple-import-sort": "^10.0.0",
     "eslint-plugin-testing-library": "^6.0.0",
-    "eslint-import-resolver-node": "^0.3.9",
-    "eslint-import-resolver-typescript": "^3.0.0",
     "prettier": "^3.0.0"
   },
   "engines": {
