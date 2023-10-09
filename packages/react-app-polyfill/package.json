@@ -27,5 +27,6 @@
     "raf": "^3.4.1",
     "regenerator-runtime": "^0.13.9",
     "whatwg-fetch": "^3.6.2"
-  }
+  },
+  "gitHead": "64a18d96b6194f9daf430a50bc7c30de6903a912"
 }

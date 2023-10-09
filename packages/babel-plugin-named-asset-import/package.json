@@ -24,5 +24,6 @@
   },
   "scripts": {
     "test": "jest"
-  }
+  },
+  "gitHead": "64a18d96b6194f9daf430a50bc7c30de6903a912"
 }
